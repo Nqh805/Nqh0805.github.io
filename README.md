@@ -1,3 +1,3 @@
 ### Xin chao
-*helo1
-*helo2
+* helo1
+* helo2
