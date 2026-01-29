@@ -176,7 +176,7 @@ footer a:active {
     }
 }
 
-@media(max-width: 800px){
+@media(max-width: 600px){
     #page_container{
         flex-wrap: wrap;
     }
@@ -189,20 +189,9 @@ footer a:active {
     .certi_items{
         flex: 50%;
     }
+    nav a{
+        float: none;
+    }
 }
 
-@media(max-width: 400px){
-    #page_container{
-        flex-wrap: wrap;
-    }
-    #left_side{
-        flex: 100%;
-    }
-    #right_side{
-        flex: 100%;
-    }
-    .certi_items{
-        flex: 100%;
-    }
-}
 
