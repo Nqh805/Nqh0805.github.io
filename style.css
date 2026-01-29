@@ -17,12 +17,7 @@ nav a{
     display: block;
     text-align: center;
     text-decoration: none;
-}
-nav a.menu_left{
     float: left;
-}
-nav a.menu_right{
-    float: right;
 }
 nav a:hover{
     background-color: rgb(188, 191, 194);
@@ -115,6 +110,9 @@ th {
     }
     .certi_items{
         flex: 50%;
+    }
+        nav a{
+        float: none;
     }
 }
 
