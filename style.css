@@ -141,6 +141,26 @@ th {
     font-size: 113%;
     font-style: italic;
 }
+
+nav a:active {
+    background-color: rgb(188, 191, 194);
+    color: rgb(17, 16, 16);
+}
+
+#avatar:active,
+.certi_img:active {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+footer a:active {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.certi_img:active {
+    transform: scale(0.96);
+}
+
 @media(max-width: 1000px){
     #page_container{
         flex-wrap: nowrap;
@@ -168,13 +188,6 @@ th {
     }
     .certi_items{
         flex: 50%;
-    }
-    nav a{
-        float: none;
-    }
-    nav a:hover{
-        background-color: rgb(188, 191, 194);
-        color: rgb(17, 16, 16);
     }
 }
 
