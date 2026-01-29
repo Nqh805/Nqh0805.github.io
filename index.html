@@ -5,12 +5,14 @@
     <meta name="keywords" content="Huy Nguyen, portfolio, information systems, backend developer, IT student">
     <meta name = "country" content = "VietNam">
     <meta name = "viewport" content = "width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4a5fc5ab15.js" crossorigin="anonymous"></script>
     <link rel = "stylesheet" href = "style.css">
     <title>Huy Nguyen Resume</title>
  </html>
  <body>
     <header>
-        <h1>My Resume</h1>
+        <h1>MY RESUME.</h1>
 
         <!--navigation start-->
         <nav>
@@ -25,10 +27,10 @@
     </header>
     <div id = "page_container">
         <div id = "left_side">
-            <img src = "assets/img/avatar.jpg" alt = "my avatar" width="60%">
+            <a href = "assets/img/avatar.jpg"><img id = "avatar" src = "assets/img/avatar.jpg" alt = "my avatar" width="60%"></a>
             
             <!--about start-->
-            <h2 id = "about">About me</h2>
+            <h2 id = "about"><i class="fa-regular fa-circle-user"></i> About me </h2>
             <p><em>I am an Information Technology student at the Posts and Telecommunications Institute of Technology (PTIT).</em></p>
             <p><em>My major is Information Systems.</em></p>
             <ul>
@@ -38,7 +40,7 @@
             <!--about end-->
 
             <!--education start-->
-            <h2 id = "education">Education</h2>
+            <h2 id = "education"><i class="fa-solid fa-school"></i> Education </h2>
             <ol>
                 <li>Gia-Loc2 Highschool.</li>
                 <li>Posts and Telecommunications Institute of Technology.</li>
@@ -46,7 +48,7 @@
             <!--education end-->
 
              <!--score-->
-            <h2 id = "scores">Scores</h2>
+            <h2 id = "scores"><i class="fa-solid fa-check"></i> Scores</h2>
             <table>
                 <tr>
                     <th rowspan = "2"></th>
@@ -82,45 +84,45 @@
             </table>
             
             <!--social-->
-            <h2 id = "socials">Socials</h2>
-            <ul>
-                <li><a href="https://www.facebook.com/nguyen.huy.954904">Facebook</a></li>
-                <li><a href="https://www.instagram.com/nqh_01/">Instagram</a></li>
-                <li><a href="https://github.com/Nqh805">Github</a></li>
+            <h2 id = "socials"><i class="fa-regular fa-face-smile"></i> Socials</h2>
+            <ul id = "socials_list">
+                <li><a href="https://www.facebook.com/nguyen.huy.954904"><i class="fa-brands fa-facebook"></i> Nguyen Huy. </a></li>
+                <li><a href="https://www.instagram.com/nqh_01/"><i class="fa-brands fa-instagram"></i> nqh_01. </a></li>
+                <li><a href="https://github.com/Nqh805"><i class="fa-brands fa-github"></i> Nqh805. </a></li>
             </ul>
             
         </div>
 
         <div id = "right_side">
             <!--certificates-->
-            <h2 id = "certi" style = "background-color: #cac7c7;">Certificates</h2>
+            <h2 id = "certi"><i class="fa-regular fa-note-sticky"></i> Certificates</h2>
             <div id = "certi_container">
                 <div class = "certi_items">
-                    <img class = "certi_img" src = "assets/img/DA certi.png" alt = "GG DA Certificate">
+                    <a href = "assets/img/DA certi.png"><img class = "certi_img" src = "assets/img/DA certi.png" alt = "GG DA Certificate"></a>
                     <div class = "certi_title">Google Data Analytics course Certificate.</div>
                 </div>
                 <div class = "certi_items">
-                    <img class = "certi_img" src = "assets/img/cyber.png" alt = "Cybersecurity Certificate">
+                    <a href = "assets/img/cyber.png"><img class = "certi_img" src = "assets/img/cyber.png" alt = "Cybersecurity Certificate"></a>
                     <div class = "certi_title">Introduction to Cybersecurity course Certificate.</div>
                 </div>
                 <div class = "certi_items">
-                    <img class = "certi_img" src = "assets/img/DA certi.png" alt = "DA Certificate">
+                    <a href = "assets/img/DA certi.png"><img class = "certi_img" src = "assets/img/DA certi.png" alt = "GG DA Certificate"></a>
                     <div class = "certi_title">Google Data Analytics course Certificate.</div>
                 </div>
                 <div class = "certi_items">
-                    <img class = "certi_img" src = "assets/img/DA certi.png" alt = "DA Certificate">
+                    <a href = "assets/img/DA certi.png"><img class = "certi_img" src = "assets/img/DA certi.png" alt = "GG DA Certificate"></a>
                     <div class = "certi_title">Google Data Analytics course Certificate.</div>
                 </div>
                 <div class = "certi_items">
-                    <img class = "certi_img" src = "assets/img/DA certi.png" alt = "DA Certificate">
+                    <a href = "assets/img/DA certi.png"><img class = "certi_img" src = "assets/img/DA certi.png" alt = "GG DA Certificate"></a>
                     <div class = "certi_title">Google Data Analytics course Certificate.</div>
                 </div>
                 <div class = "certi_items">
-                    <img class = "certi_img" src = "assets/img/DA certi.png" alt = "DA Certificate">
+                    <a href = "assets/img/DA certi.png"><img class = "certi_img" src = "assets/img/DA certi.png" alt = "GG DA Certificate"></a>
                     <div class = "certi_title">Google Data Analytics course Certificate.</div>
                 </div>
                 <div class = "certi_items">
-                    <img class = "certi_img" src = "assets/img/Toeic.jpg" alt = "Toeic 610">
+                    <a href = "assets/img/Toeic.jpg"><img class = "certi_img" src = "assets/img/Toeic.jpg" alt = "Toeic 610"></a>
                     <div class = "certi_title">Toeic 610.</div>
                 </div>
                 <div class = "certi_items"></div>
@@ -128,7 +130,7 @@
             </div>
 
             <!--project-->
-            <h2 id = "projects" style = "background-color: #cac7c7;">My projects</h2>
+            <h2 id = "projects"><i class="fa-solid fa-code"></i> My projects</h2>
             <ol>
                 <li><a href = "https://github.com/Nqh805/Library-Management-System">Library Management Systems</a></li>
                 <li></li>
@@ -137,6 +139,6 @@
     </div>
     <!--footer-->
     <footer>
-        <p>Created by Huy with love! <a href = "mailto:nguyenhuy130805@gmail.com"> Email me. </a></p>
+        <p>_._._._. Created by Huy with love ! <a href = "mailto:nguyenhuy130805@gmail.com"> Email me </a>._._._._ </p>
     </footer>
  </body> 
