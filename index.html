@@ -1,144 +1,195 @@
- <!DOCTYPE html>
- <html lang = "en">
-    <meta name = "author" content = "Huy Nguyen">
-    <meta name="description" content="Huy Nguyen Resume - Information Systems student, focused on backend development and data-oriented projects.">
-    <meta name="keywords" content="Huy Nguyen, portfolio, information systems, backend developer, IT student">
-    <meta name = "country" content = "VietNam">
-    <meta name = "viewport" content = "width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/4a5fc5ab15.js" crossorigin="anonymous"></script>
-    <link rel = "stylesheet" href = "style.css">
-    <title>Huy Nguyen Resume</title>
- </html>
- <body>
-    <header>
-        <h1>MY RESUME.</h1>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');  
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
 
-        <!--navigation start-->
-        <nav>
-            <a href = "#about">About me</a>
-            <a href = "#education">Education</a>
-            <a href = "#socials">Socials</a>            
-            <a href = "#scores">Scores</a>
-            <a href = "#projects">Projetcs</a>
-            <a href = "#certi">Certificate</a>
-        </nav>
-        <!--navigation end-->
-    </header>
-    <div id = "page_container">
-        <div id = "left_side">
-            <a href = "assets/img/avatar.jpg"><img id = "avatar" src = "assets/img/avatar.jpg" alt = "my avatar" width="60%"></a>
-            
-            <!--about start-->
-            <h2 id = "about"><i class="fa-regular fa-circle-user"></i> About me </h2>
-            <p><em>I am an Information Technology student at the Posts and Telecommunications Institute of Technology (PTIT).</em></p>
-            <p><em>My major is Information Systems.</em></p>
-            <ul>
-                <li><strong>Fullname: </strong>Nguyen Huy</li>
-                <li><strong>Place: </strong>Ha-Dong, Ha-Noi</li>
-            </ul>   
-            <!--about end-->
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 340;
+    font-style: normal;
+}
+body h2{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+h1{
+    color:rgb(48, 47, 47);
+    background-color:rgb(101, 174, 177);
+    text-align: center;
+    padding: 80px;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-size: 55px;
+    font-weight: normal;
+    letter-spacing: 2px;
+}
+nav{
+    background-color:rgb(96, 93, 93);
+    overflow: hidden;
+    margin: 0 0 10px 0;
+}
+nav a{
+    color: rgb(214, 220, 224);
+    padding: 14px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    float: left;
+}
+nav a:hover{
+    background-color: rgb(188, 191, 194);
+    color: rgb(17, 16, 16);
+}
+#page_container{
+    display: flex;
+    flex-wrap: nowrap;
+}   
+#left_side{
+    background-color: #d5d2d2;
+    flex: 30%;
+    padding: 20px;
+}
+#avatar{
+    border-radius: 20px;
+    box-shadow: 0 20px 30px rgba(106, 105, 105, 0.25);
+}
+#avatar:hover{
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+#right_side{
+    background-color: #d8d8d8;
+    flex: 70%;
+    padding: 20px;
+}
+#right_side h2{
+    background-color: #d1cece;  
+}
+footer {
+    background-color: rgb(131, 126, 126);
+    color: rgb(230, 234, 236);
+    text-align: center;
+    padding: 18px 0 14px;
+    border-top: 1px solid rgba(228, 196, 196, 0.2);
+}
 
-            <!--education start-->
-            <h2 id = "education"><i class="fa-solid fa-school"></i> Education </h2>
-            <ol>
-                <li>Gia-Loc2 Highschool.</li>
-                <li>Posts and Telecommunications Institute of Technology.</li>
-            </ol>
-            <!--education end-->
+footer p {
+    margin: 0;
+    font-size: 25px;
+    font-family: "Sacramento", cursive;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
 
-             <!--score-->
-            <h2 id = "scores"><i class="fa-solid fa-check"></i> Scores</h2>
-            <table>
-                <tr>
-                    <th rowspan = "2"></th>
-                    <th colspan="2">Math</th>
-                    <th rowspan="2">Physics</th>
-                    <th rowspan="2">IT</th>
-                </tr>
-                    <th>Math1</th>
-                    <th>Math2</th>
-                <tr>
-                </tr>
-                <tr>
-                    <th>2019</th>
-                    <td>8</td>
-                    <td>0</td>
-                    <td>9</td>
-                    <td>10</td>
-                </tr>
-                <tr>
-                    <th>2019</th>
-                    <td>10</td>
-                    <td>2</td>
-                    <td>10</td>
-                    <td>10</td>
-                </tr>
-                <tr>
-                    <th>2019</th>
-                    <td>8</td>
-                    <td>8</td>
-                    <td>8</td>
-                    <td>10</td>
-                </tr>
-            </table>
-            
-            <!--social-->
-            <h2 id = "socials"><i class="fa-regular fa-face-smile"></i> Socials</h2>
-            <ul id = "socials_list">
-                <li><a href="https://www.facebook.com/nguyen.huy.954904"><i class="fa-brands fa-facebook"></i> Nguyen Huy. </a></li>
-                <li><a href="https://www.instagram.com/nqh_01/"><i class="fa-brands fa-instagram"></i> nqh_01. </a></li>
-                <li><a href="https://github.com/Nqh805"><i class="fa-brands fa-github"></i> Nqh805. </a></li>
-            </ul>
-            
-        </div>
+footer a {
+    margin-top: 6px;
+    font-size: 100%;
+    color: rgb(240, 242, 243);
+    text-decoration: none;
+    opacity: 0.85;
+    transition: 0.3s;
+}
 
-        <div id = "right_side">
-            <!--certificates-->
-            <h2 id = "certi"><i class="fa-regular fa-note-sticky"></i> Certificates</h2>
-            <div id = "certi_container">
-                <div class = "certi_items">
-                    <a href = "assets/img/DA certi.png"><img class = "certi_img" src = "assets/img/DA certi.png" alt = "GG DA Certificate"></a>
-                    <div class = "certi_title">Google Data Analytics course Certificate.</div>
-                </div>
-                <div class = "certi_items">
-                    <a href = "assets/img/cyber.png"><img class = "certi_img" src = "assets/img/cyber.png" alt = "Cybersecurity Certificate"></a>
-                    <div class = "certi_title">Introduction to Cybersecurity course Certificate.</div>
-                </div>
-                <div class = "certi_items">
-                    <a href = "assets/img/DA certi.png"><img class = "certi_img" src = "assets/img/DA certi.png" alt = "GG DA Certificate"></a>
-                    <div class = "certi_title">Google Data Analytics course Certificate.</div>
-                </div>
-                <div class = "certi_items">
-                    <a href = "assets/img/DA certi.png"><img class = "certi_img" src = "assets/img/DA certi.png" alt = "GG DA Certificate"></a>
-                    <div class = "certi_title">Google Data Analytics course Certificate.</div>
-                </div>
-                <div class = "certi_items">
-                    <a href = "assets/img/DA certi.png"><img class = "certi_img" src = "assets/img/DA certi.png" alt = "GG DA Certificate"></a>
-                    <div class = "certi_title">Google Data Analytics course Certificate.</div>
-                </div>
-                <div class = "certi_items">
-                    <a href = "assets/img/DA certi.png"><img class = "certi_img" src = "assets/img/DA certi.png" alt = "GG DA Certificate"></a>
-                    <div class = "certi_title">Google Data Analytics course Certificate.</div>
-                </div>
-                <div class = "certi_items">
-                    <a href = "assets/img/Toeic.jpg"><img class = "certi_img" src = "assets/img/Toeic.jpg" alt = "Toeic 610"></a>
-                    <div class = "certi_title">Toeic 610.</div>
-                </div>
-                <div class = "certi_items"></div>
-                <div class = "certi_items"></div>
-            </div>
+footer a:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
 
-            <!--project-->
-            <h2 id = "projects"><i class="fa-solid fa-code"></i> My projects</h2>
-            <ol>
-                <li><a href = "https://github.com/Nqh805/Library-Management-System">Library Management Systems</a></li>
-                <li></li>
-            </ol>
-        </div>
-    </div>
-    <!--footer-->
-    <footer>
-        <p>_._._._. Created by Huy with love ! <a href = "mailto:nguyenhuy130805@gmail.com"> Email me </a>._._._._ </p>
-    </footer>
- </body> 
+#socials_list a{
+    text-decoration: none;
+}
+table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #ebe6e6;}
+
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: rgb(97, 148, 150);
+  color: white;
+}
+
+#certi_container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.certi_items{
+    flex: 33%;
+}
+.certi_img{
+    width: 94%;
+    box-shadow: 10px 0 20px rgba(82, 81, 81, 0.25);
+}
+.certi_img:hover{
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+.certi_title{
+    text-align: center;
+    margin: 10px;
+    font-size: 113%;
+    font-style: italic;
+}
+@media(max-width: 1000px){
+    #page_container{
+        flex-wrap: nowrap;
+    }
+    #left_side{
+        flex: 30%;
+    }
+    #right_side{
+        flex: 70%;
+    }
+    .certi_items{
+        flex: 50%;
+    }
+}
+
+@media(max-width: 800px){
+    #page_container{
+        flex-wrap: wrap;
+    }
+    #left_side{
+        flex: 100%;
+    }
+    #right_side{
+        flex: 100%;
+    }
+    .certi_items{
+        flex: 50%;
+    }
+    nav a{
+        float: none;
+    }
+    nav a:hover{
+        background-color: rgb(188, 191, 194);
+        color: rgb(17, 16, 16);
+    }
+}
+
+@media(max-width: 400px){
+    #page_container{
+        flex-wrap: wrap;
+    }
+    #left_side{
+        flex: 100%;
+    }
+    #right_side{
+        flex: 100%;
+    }
+    .certi_items{
+        flex: 100%;
+    }
+}
+
