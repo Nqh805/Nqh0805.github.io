@@ -97,9 +97,16 @@ footer a:hover {
     text-decoration: underline;
 }
 
-#socials_list a{
+#socials_list a, #projects_list a{
     text-decoration: none;
 }
+#socials_list li:hover{
+    text-decoration: underline;
+}
+#projects_list li:hover{
+    text-decoration: underline;
+}
+
 table {
   font-family: Arial, Helvetica, sans-serif;
   border-collapse: collapse;
@@ -193,5 +200,6 @@ footer a:active {
         float: none;
     }
 }
+
 
 
